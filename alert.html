@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  </head>
+  <body onLoad="checkForPopBlocker();">
+
+    <p>Hello there <em>People</em>!</p>
+    <p><a href="JavaScript:void(0)" onClick="test();">Test 1</a></p>
+    <p><a href="JavaScript:void(0)" onClick="baseAlert('testing alert');">Click Me</a></p>
+
+    <input type="button" value="Button Test" onClick="test();">
+
+    <a href="#" onMouseover="this.style.color = 'green';">Change Color</a>
+
+    <p>
+      <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';" onBlur="this.style.backgroundColor='white';">
+    </p>
+
+    <form onSubmit="checkEmail('email');">
+      Email:
+      <input type="text" id="email">
+      <input type="submit" value="Submit">
+    </form>
+
+    
+    <p id="expandText">
+      Blah blah blah <a href="javascript:void(0);" onClick="expandMe();"><em>Click for more.</em></a>
+    </p>
+
+    <img src="before.jpg" id="before" onMouseover="swapPic(id, 'after.jpg');" onmouseout="swapPic(id, 'before.jpg');">
+
+    <input type="button" value="New Window" onClick="openNewWindow();">
+    <input type="button" value="DOM test" onClick="testDOM();">
+    <input type="button" value="Test" id="buttontest">
+
+    <div>
+      <canvas id="canvas" width="200", height="200">
+	Does not support the canvas. Booo!
+      </canvas>
+    </div>
+    <script src="test.js"></script>
+
+  </body>
+</html>
